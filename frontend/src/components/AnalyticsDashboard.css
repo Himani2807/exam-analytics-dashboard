@@ -1,0 +1,29 @@
+.dashboard-container { padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+.dashboard-title { text-align: center; margin-bottom: 24px; color:#1e293b;}
+.metrics-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px;}
+.metric-card { padding:20px; border-radius:8px; text-align:center; color:white;}
+.total-submissions { background: linear-gradient(135deg,#60a5fa 0%,#3b82f6 100%);}
+.average-time { background: linear-gradient(135deg,#fbbf24 0%,#f59e0b 100%);}
+.average-accuracy { background: linear-gradient(135deg,#34d399 0%,#10b981 100%);}
+.active-students { background: linear-gradient(135deg,#a78bfa 0%,#8b5cf6 100%);}
+.metric-value { font-size:24px; font-weight:bold; margin-top:8px;}
+.tabs { display:flex; gap:8px; margin-bottom:16px;}
+.tabs button { padding:8px 16px; border:none; border-radius:6px; background:#f1f5f9; cursor:pointer; transition:0.2s;}
+.tabs button.active { background:#3b82f6; color:white;}
+.list-section { background:#f8fafc; padding:16px; border-radius:8px; margin-bottom:24px;}
+.students-list { display:flex; flex-direction:column; gap:8px;}
+.student-item { display:flex; align-items:center; padding:12px; background:white; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+.student-item .name { flex:1; font-weight:500;}
+.student-item .time { margin:0 16px; color:#64748b;}
+.student-item .score { margin:0 16px; font-weight:500;}
+.student-item .status { padding:4px 8px; border-radius:4px; font-size:0.875rem;}
+.student-item.submitted .status { background:#dcfce7; color:#059669;}
+.student-item.pending .status { background:#fff1f2; color:#be123c;}
+.student-item.active .status { background:#e0f2fe; color:#0284c7;}
+.performance-section { display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+.top-performers, .failing-students { background:#f8fafc; padding:16px; border-radius:8px;}
+.performers-list { display:flex; flex-direction:column; gap:8px;}
+.performer-item { display:flex; align-items:center; padding:12px; background:white; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+.performer-item.top { border-left:4px solid #10b981;}
+.performer-item.failing { border-left:4px solid #ef4444;}
+@media (max-width:768px) { .metrics-grid { grid-template-columns:repeat(2,1fr);} .performance-section { grid-template-columns:1fr; } }
